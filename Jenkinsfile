@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/aop-logger-build/") {
+                dir("/var/lib/jenkins/workspace/aop-logger-build") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             }
